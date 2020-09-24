@@ -2,6 +2,7 @@
 """Creates an empty class Square"""
 
 
-class Square():
+class Square:
         """This is an empty class"""
+
         pass

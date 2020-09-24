@@ -1,1 +1,0 @@
-Holbertonschool higher level programming

@@ -3,10 +3,7 @@
 
 
 class BaseGeometry:
-""" Class BaseGeometry """
-    def __init__(self):
-        """ Entry """
-        pass
+    """ Class BaseGeometry """
 
     def area(self):
         """ Public instance """

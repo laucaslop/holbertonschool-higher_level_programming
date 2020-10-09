@@ -4,7 +4,6 @@
 
 def append_after(filename="", search_string="", new_string=""):
     """ Function """
-
     with open(filename, encoding="utf-8") as a_file:
         lines = a_file.readlines()
         for line in lines:

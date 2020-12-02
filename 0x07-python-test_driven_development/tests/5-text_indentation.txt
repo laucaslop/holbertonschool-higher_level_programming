@@ -1,0 +1,95 @@
+""" Function that prints a text with 2 new lines """
+
+""" Import function """
+>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+
+""" S U C C E S S  C A S E S """
+
+>>> text_indentation("String. Text")
+String.
+<BLANKLINE>
+Text
+
+>>> text_indentation("Whit this one?Yep")
+Whit this one?
+<BLANKLINE>
+Yep
+
+>>> text_indentation("I want a. time machine. :)")
+I want a.
+<BLANKLINE>
+time machine.
+<BLANKLINE>
+:
+<BLANKLINE>
+)
+
+>>> text_indentation("Just: Do it")
+Just:
+<BLANKLINE>
+Do it
+
+>>> text_indentation("???")
+?
+<BLANKLINE>
+?
+<BLANKLINE>
+?
+<BLANKLINE>
+
+
+>>> text_indentation("???:).:)")
+?
+<BLANKLINE>
+?
+<BLANKLINE>
+?
+<BLANKLINE>
+:
+<BLANKLINE>
+).
+<BLANKLINE>
+:
+<BLANKLINE>
+)
+
+>>> text_indentation(".")
+.
+<BLANKLINE>
+
+>>> text_indentation("Es tarde, ¿vas a desayunar?")
+Es tarde, ¿vas a desayunar?
+<BLANKLINE>
+
+""" F A I L U R E   C A S E S """
+
+>>> text_indentation(None)
+Traceback (most recent call last):
+...
+TypeError: text must be a string
+
+>>> text_indentation(98)
+Traceback (most recent call last):
+...
+TypeError: text must be a string
+
+>>> text_indentation(98.4)
+Traceback (most recent call last):
+...
+TypeError: text must be a string
+
+>>> text_indentation()
+Traceback (most recent call last):
+...
+TypeError: text_indentation() missing 1 required positional argument: 'text'
+
+>>> text_indentation({98.4: 12})
+Traceback (most recent call last):
+...
+TypeError: text must be a string
+
+>>> text_indentation((98.4, 12))
+Traceback (most recent call last):
+...
+TypeError: text must be a string

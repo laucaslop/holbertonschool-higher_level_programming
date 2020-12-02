@@ -22,4 +22,3 @@ class Student:
                     new_dict[att] = self.__dict__[att]
             return new_dict
         return self.__dict__
-
